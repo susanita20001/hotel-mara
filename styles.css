@@ -695,3 +695,24 @@ footer {
         padding: 20px;
     }
 }
+.actividades-checkbox {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.checkbox-option {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-option input {
+    margin-right: 10px;
+    width: 18px;
+    height: 18px;
+}
+
+.checkbox-option label {
+    cursor: pointer;
+}
