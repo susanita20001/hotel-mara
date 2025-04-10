@@ -1,4 +1,4 @@
-
+/* Estilos generales */
 * {
     margin: 0;
     padding: 0;
@@ -694,25 +694,25 @@ footer {
         width: 95%;
         padding: 20px;
     }
-}
-.actividades-checkbox {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 10px;
-}
-
-.checkbox-option {
-    display: flex;
-    align-items: center;
+} /* Agregar estilos para el select múltiple */
+#actividades-seleccionadas {
+    height: auto;
+    min-height: 100px;
+    padding: 5px;
 }
 
-.checkbox-option input {
-    margin-right: 10px;
-    width: 18px;
-    height: 18px;
+#actividades-seleccionadas option {
+    padding: 8px;
+    margin: 2px 0;
+    border-radius: 3px;
 }
 
-.checkbox-option label {
-    cursor: pointer;
+#actividades-seleccionadas option:hover {
+    background-color: #0066cc;
+    color: white;
+}
+
+#actividades-seleccionadas option:checked {
+    background-color: #0066cc;
+    color: white;
 }

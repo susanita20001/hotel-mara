@@ -126,6 +126,8 @@ function cargarHoteles() {
         container.appendChild(hotelCard);
     });
 }
+
+// Función para filtrar hoteles por estado
 function filtrarHoteles() {
     const estado = document.getElementById('filtro-estado').value;
     const container = document.getElementById('hoteles-container');
@@ -135,15 +137,20 @@ function filtrarHoteles() {
         cargarHoteles();
         return;
     }
+    
     const hotelesFiltrados = hoteles.filter(hotel => hotel.ubicacion.includes(estado));
+    
     if (hotelesFiltrados.length === 0) {
         container.innerHTML = '<p class="no-result">No hay hoteles disponibles en este estado.</p>';
         return;
     }
+    
     hotelesFiltrados.forEach(hotel => {
         const hotelCard = document.createElement('div');
         hotelCard.className = 'hotel-card';
+        
         const estrellas = '★'.repeat(hotel.estrellas);
+        
         hotelCard.innerHTML = `
             <div class="hotel-img">
                 <img src="${hotel.imagen}" alt="${hotel.nombre}">
@@ -160,6 +167,7 @@ function filtrarHoteles() {
                 <button class="btn" onclick="mostrarReserva('${hotel.nombre}', ${hotel.precio})">Reservar ahora</button>
             </div>
         `;
+        
         container.appendChild(hotelCard);
     });
 }

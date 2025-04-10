@@ -29,6 +29,7 @@
             </div>
         </div>
     </header>
+
     <section id="inicio" class="hero">
         <div class="hero-content">
             <h2>Descubre el paraíso en las costas de México</h2>
@@ -137,33 +138,37 @@
             </div>
         </div>
     </section>
+
     <section id="contacto" class="contacto">
         <div class="container">
             <h2>Contacto</h2>
             <div class="contacto-grid">
                 <div class="info">
                     <h3>Información de contacto</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> Av. Costera 123, México</p>
-                    <p><i class="fas fa-phone"></i> +52 779 134 1560</p>
-                    <p><i class="fas fa-envelope"></i> reservasMarhotel@marhoteles.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Av. Costera 123, Cancún, México</p>
+                    <p><i class="fas fa-phone"></i> +52 998 123 4567</p>
+                    <p><i class="fas fa-envelope"></i> info@marhoteles.com</p>
                     <div class="social">
                         <a href="#"><i class="fab fa-facebook"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
                     </div>
                 </div>
-                <form class="formulario" id="contacto-form">
-                    <div class="input-group">
-                        <input type="text" id="nombre" placeholder="Nombre completo" required>
-                    </div>
-                    <div class="input-group">
-                        <input type="email" id="email" placeholder="Correo electrónico" required>
-                    </div>
-                    <div class="input-group">
-                        <textarea id="mensaje" placeholder="Tu mensaje" required></textarea>
-                    </div>
-                    <button type="submit" class="btn">Enviar mensaje</button>
-                </form>
+              <!-- Modificar el formulario de contacto -->
+<form class="formulario" id="contacto-form" action="https://formsubmit.co/sht23413070030463@cecyteh.edu.mx" method="POST">
+    <input type="hidden" name="_subject" value="Nuevo mensaje de Mar Hoteles">
+    <input type="hidden" name="_template" value="table">
+    <div class="input-group">
+        <input type="text" id="nombre" name="name" placeholder="Nombre completo" required>
+    </div>
+    <div class="input-group">
+        <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
+    </div>
+    <div class="input-group">
+        <textarea id="mensaje" name="message" placeholder="Tu mensaje" required></textarea>
+    </div>
+    <button type="submit" class="btn">Enviar mensaje</button>
+</form>
             </div>
         </div>
     </section>
@@ -203,6 +208,7 @@
                 <div class="input-group">
                     <label for="hotel-seleccionado">Hotel:</label>
                     <select id="hotel-seleccionado" required>
+                        <!-- Opciones se llenarán dinámicamente -->
                     </select>
                 </div>
                 <div class="input-group">
@@ -227,6 +233,7 @@
             </div>
         </div>
     </div>
+
     <div id="modal-pago" class="modal">
         <div class="modal-contenido pago-contenido">
             <span class="cerrar" onclick="cerrarModal()">&times;</span>
@@ -253,6 +260,7 @@
             </form>
         </div>
     </div>
+
     <div id="modal-ticket" class="modal">
         <div class="modal-contenido ticket-contenido">
             <span class="cerrar" onclick="cerrarModal()">&times;</span>
@@ -284,6 +292,7 @@
             </div>
         </div>
     </div>
+
     <footer>
         <div class="container">
             <div class="footer-grid">
@@ -303,9 +312,9 @@
                 </div>
                 <div class="footer-col">
                     <h3>Contacto</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> Av. Costera 123, México</p>
-                    <p><i class="fas fa-phone"></i> +52 779 134 1560</p>
-                    <p><i class="fas fa-envelope"></i> reservasMarhotel@marhoteles.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Av. Costera 123, Cancún, México</p>
+                    <p><i class="fas fa-phone"></i> +52 998 123 4567</p>
+                    <p><i class="fas fa-envelope"></i> info@marhoteles.com</p>
                 </div>
                 <div class="footer-col">
                     <h3>Newsletter</h3>
@@ -320,7 +329,8 @@
             </div>
         </div>
     </footer>
-    <script src="script1.js"></script>
+
+    <script src="script.js"></script>
     <script src="hoteles.js"></script>
     <script src="reservaciones.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
